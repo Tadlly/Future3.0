@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Faculdades - Feira das Profissões</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-faculdades.css"> <!-- Link para o novo CSS -->
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <a href="inicio.html">
+                <img src="futture.jpg" alt="Descrição da Imagem">
+            </a>        
+        </div>
+        <button id="voltarBtn" class="btn-back" onclick="voltar()">⬅ Voltar ao início</button>
+        <h1>Universidades em Picos</h1>
+        <p>Descubra as opções de ensino superior disponíveis em Picos, Piauí.</p>
+    </header>
+
+    <nav>
+        <a href="faculdades.html">Faculdades</a>
+        <a href="concursos.html">Concursos</a>
+        <a href="teste-vocacional.html">Teste Vocacional</a>
+        <a href="login.html">Login</a>
+    </nav>
+
+    <div class="container">
+        <h2>Instituições de Ensino Superior</h2>
+        <ul class="faculdades-list">
+            <li>
+                <strong>Universidade Federal do Piauí (UFPI)</strong>
+                <button class="nota-btn" data-faculdade="UFPI">Ver Cursos e Notas de Corte</button>
+                <div class="cursos-list" id="ufpi-cursos" style="display: none;">
+                    <ul>
+                        <li>
+                            <strong>Medicina:</strong> Nota de Corte 788,93
+                        </li>
+                        <li>
+                            <strong>Pedagogia:</strong> Nota de Corte 571,53
+                        </li>
+                        <li>
+                            <strong>Sistema de Informações:</strong> Nota de Corte 611,22
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <strong>IFPI (Instituto Federal do Piauí)</strong>
+                <button class="nota-btn" data-faculdade="IFPI">Ver Cursos e Notas de Corte</button>
+                <div class="cursos-list" id="ifpi-cursos" style="display: none;">
+                    <ul>
+                        <li>
+                            <strong>ADS:</strong> Nota de Corte 663.75
+                        </li>
+                        <li>
+                            <strong>Licenciatura em Química:</strong> Nota de Corte 574.68
+                        </li>
+                        <li>
+                            <strong>Licenciatura em Física:</strong> Nota de Corte 566.33
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <strong>UESPI (Universidade Estadual do Piauí)</strong>
+                <button class="nota-btn" data-faculdade="UESPI">Ver Cursos e Notas de Corte</button>
+                <div class="cursos-list" id="uespi-cursos" style="display: none;">
+                    <ul>
+                        <li>
+                            <strong>Contábeis:</strong> Nota de Corte 614,89
+                        </li>
+                        <li>
+                            <strong>Direito:</strong> Nota de Corte 685,26
+                        </li>
+                        <li>
+                            <strong>Administração:</strong> Nota de Corte 597,13
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Feira das Profissões. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="scripts-faculdades.js"></script> <!-- Link para o novo script -->
+
+</body>
+</html>
